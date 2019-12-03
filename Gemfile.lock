@@ -1,0 +1,187 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activemodel (5.2.3)
+      activesupport (= 5.2.3)
+    activerecord (5.2.3)
+      activemodel (= 5.2.3)
+      activesupport (= 5.2.3)
+      arel (>= 9.0)
+    activesupport (5.2.3)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
+    arel (9.0.0)
+    ast (2.4.0)
+    backports (3.15.0)
+    bcrypt (3.1.13)
+    coderay (1.1.2)
+    composite_primary_keys (11.2.0)
+      activerecord (~> 5.2.1)
+    concurrent-ruby (1.1.5)
+    daemons (1.3.1)
+    diff-lcs (1.3)
+    docile (1.3.2)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
+    eventmachine (1.2.7)
+    eventmachine (1.2.7-x64-mingw32)
+    ffi (1.11.1)
+    ffi (1.11.1-x64-mingw32)
+    ffi-libarchive (0.2.0)
+      ffi (~> 1.0)
+    fileutils (1.3.0)
+    http-accept (1.7.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    i18n (1.7.0)
+      concurrent-ruby (~> 1.0)
+    jaro_winkler (1.5.3)
+    jbuilder (2.9.1)
+      activesupport (>= 4.2.0)
+    json (2.2.0)
+    jwt (2.2.1)
+    kgio (2.11.2)
+    logger (1.4.1)
+    magic (0.2.9)
+      ffi (>= 0.6.3)
+    method_source (0.9.2)
+    mime-types (3.3)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2019.1009)
+    minitest (5.12.2)
+    multi_json (1.14.1)
+    mustermann (1.0.3)
+    net-ldap (0.16.1)
+    netrc (0.11.0)
+    parallel (1.18.0)
+    parser (2.6.5.0)
+      ast (~> 2.4.0)
+    pry (0.12.2)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
+    rack (2.0.7)
+    rack-protection (2.0.7)
+      rack
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    rainbow (3.0.0)
+    raindrops (0.19.0)
+    rake (13.0.0)
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    rest-client (2.1.0-x64-mingw32)
+      ffi (~> 1.9)
+      http-accept (>= 1.7.0, < 2.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
+    rspec (3.9.0)
+      rspec-core (~> 3.9.0)
+      rspec-expectations (~> 3.9.0)
+      rspec-mocks (~> 3.9.0)
+    rspec-core (3.9.0)
+      rspec-support (~> 3.9.0)
+    rspec-expectations (3.9.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-mocks (3.9.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.9.0)
+    rspec-support (3.9.0)
+    rubocop (0.75.1)
+      jaro_winkler (~> 1.5.1)
+      parallel (~> 1.10)
+      parser (>= 2.6)
+      rainbow (>= 2.2.2, < 4.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 1.7)
+    ruby-progressbar (1.10.1)
+    rubyzip (1.3.0)
+    simplecov (0.17.1)
+      docile (~> 1.1)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
+    sinatra (2.0.7)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.7)
+      tilt (~> 2.0)
+    sinatra-activerecord (2.0.14)
+      activerecord (>= 3.2)
+      sinatra (>= 1.0)
+    sinatra-contrib (2.0.7)
+      backports (>= 2.8.2)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.0.7)
+      sinatra (= 2.0.7)
+      tilt (~> 2.0)
+    sinatra-cross_origin (0.4.0)
+    sinatra-strong-params (0.1.0)
+      sinatra (>= 1.4.0)
+    thin (1.7.2)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0, >= 1.0.4)
+      rack (>= 1, < 3)
+    thread_safe (0.3.6)
+    tilt (2.0.10)
+    tilt-jbuilder (0.7.1)
+      jbuilder
+      tilt (>= 1.3.0, < 3)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.6)
+    unicode-display_width (1.6.0)
+    unicorn (5.5.1)
+      kgio (~> 2.6)
+      raindrops (~> 0.7)
+    yajl-ruby (1.4.1)
+    zip-zip (0.3)
+      rubyzip (>= 1.0.0)
+
+PLATFORMS
+  ruby
+  x64-mingw32
+
+DEPENDENCIES
+  activerecord
+  activesupport
+  bcrypt
+  composite_primary_keys
+  ffi
+  ffi-libarchive
+  fileutils
+  i18n
+  jwt
+  logger
+  magic
+  net-ldap
+  pry
+  rack-test
+  rake
+  rest-client
+  rspec
+  rubocop
+  rubyzip (>= 1.0.0)
+  simplecov
+  sinatra
+  sinatra-activerecord
+  sinatra-contrib
+  sinatra-cross_origin
+  sinatra-strong-params
+  thin
+  tilt-jbuilder
+  unicorn
+  yajl-ruby (= 1.4.1)
+  zip-zip
+
+BUNDLED WITH
+   2.0.2

@@ -1,0 +1,160 @@
+# inherit_from: rubocop-todo.yml
+
+# 日本語でのコメントを許可
+AsciiComments:
+  Enabled: false
+
+# begin, class, def, end, module と同じ行のコメントを禁止しない
+CommentedKeyword:
+  Enabled: false
+
+# 行の文字数を制限しない
+LineLength:
+  Enabled: false
+
+# ブロックの行数を制限しない
+BlockLength:
+  Enabled: false
+
+# メソッドの行数を制限しない
+MethodLength:
+  Enabled: false
+
+# クラスの行数を制限しない
+ClassLength:
+  Enabled: false
+
+# モジュールの行数を制限しない
+ModuleLength:
+  Enabled: false
+
+# クラスやモジュールの先頭コメントを要求しない
+Documentation:
+  Enabled: false
+
+# 'set_',  'get_' で始まるアクセサメソッドを許可
+AccessorMethodName:
+  Enabled: false
+
+# 'is_', 'has_', 'have_' で始まるメソッドを許可
+PredicateName:
+  Enabled: false
+
+# reduce, injectなど1行でブロック呼び出しした場合の変数名の命名規則を制限しない
+SingleLineBlockParams:
+  Enabled: false
+
+# 引数の数を制限しない
+ParameterLists:
+  Enabled: false
+
+# 循環的複雑度を制限しない
+CyclomaticComplexity:
+  Enabled: false
+
+# Assignment Branch Condition size を制限しない
+AbcSize:
+  Enabled: false
+
+# Perceived Complexity を制限しない
+PerceivedComplexity:
+  Enabled: false
+
+# 特定のファイル名をスネークケース以外も許可
+FileName:
+  Exclude:
+    - build/system/etcfiles/etc/init.d/rcS
+    - build/system/nahwmon/lib/noah/nahwmon/models/*.rb
+
+# ブロックとしての中身が空のブレース({})の前にはスペースを空ける
+SpaceBeforeBlockBraces:
+  EnforcedStyleForEmptyBraces: space
+
+# 配列を複数行で記述する場合、末尾の要素の行末にカンマを付ける
+TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+# ハッシュを複数行で記述する場合、末尾の要素の行末にカンマを付ける
+TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+# メソッドの引数を複数行で記述する場合、末尾の要素の行末にカンマを付ける
+TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+
+# 配列の閉じ括弧のインデントは、開始括弧のある行の先頭に揃える
+IndentFirstArrayElement:
+  EnforcedStyle: consistent
+
+# ハッシュの閉じ括弧のインデントは、開始括弧のある行の先頭に揃える
+IndentFirstHashElement:
+  EnforcedStyle: consistent
+
+# 例外の送出時に raise を利用するか fail を利用するかは文脈に合わせる
+SignalException:
+  EnforcedStyle: semantic
+
+# クラス指定のないrescue節を禁止しない
+RescueStandardError:
+  Enabled: false
+
+# if 文や case 文全体の返り値を代入するスタイルを強制しない
+ConditionalAssignment:
+  Enabled: false
+
+# コレクション系メソッドの統一チェックを有効化(ただし inject は修正対象外にする)
+CollectionMethods:
+  Enabled: true
+  PreferredMethods:
+    inject: 'inject'
+
+# sprintf フォーマットの引数指定形式をチェックしない
+FormatStringToken:
+  Enabled: false
+
+# shebang(ファイル先頭の#!)があるファイルへの実行権限の付与を強制しない
+ScriptPermission:
+  Enabled: false
+
+# Yoda Condition (`if 42 == hoge` のような、変数を右側に置く書き方) を強制しない
+YodaCondition:
+  Enabled: false
+
+# ガード節のあとの空行を強制しない
+EmptyLineAfterGuardClause:
+  Enabled: false
+
+# 後置if/unlessを強制しない
+IfUnlessModifier:
+  Enabled: false
+
+# ハッシュの位置揃えスタイルの指定(キーの先頭と値の先頭の両方を揃えても許可する)
+AlignHash:
+  EnforcedHashRocketStyle:
+    - key
+    - table
+  EnforcedColonStyle:
+    - key
+    - table
+
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - build/app/rel/**/*
+    - build/debian/newroot/**/*
+    - build/dist/**/*
+    - build/system/busybox/busybox-*/**/*
+    - build/system/bundler/_install/**/*
+    - build/system/etcfiles/tmp_etc/**/*
+    - build/system/kernel/linux-*/**/*
+    - build/system/ruby_gems/gems/vendor/**/*
+    - build/system/ruby_gems/tmp_gems/**/*
+    - build/system/api/rel/**/*
+    - build/system/api/swagger/**/*
+    - build/system/api/sysapi/vendor/**/*
+    - build/system/ui/rel/**/*
+    - build/system/ui/sysui/vendor/**/*
+    - vendor/**/*
+    - db/**/*
+    - Gemfile
+    - Gemfile.lock

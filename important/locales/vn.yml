@@ -1,0 +1,12 @@
+vn:
+  common:
+    success:
+      test: "vn"
+    errors:
+      missing_params: 'Missing params'
+  user_controller:
+    success:
+      create_account: 'Success! Account created'
+    errors:
+        
+  upload_controller:

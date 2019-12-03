@@ -1,0 +1,46 @@
+en:
+  common:
+    success:
+      congrate: 'Success'
+      test: "en"
+      not_implemented: "This Feature not not_implemented"
+    errors:
+      missing_params: 'Missing params: %s'
+      something_when_wrong: "Something when wrong!"
+      access_denied: "Access denied"
+      invalid_params: 'Invalid params'
+      permission_denied: 'Permission denied'
+      invalid_type: "Type invalid in params: %s"
+  user_controller:
+    success:
+      create_account: 'Success! Account created'
+      valid_password: 'New password is valid'
+    errors:
+      cannot_delete_user: 'Cannot delete user'
+      user_not_found: 'Cannot found user'
+      login: 'Username or password is incorrect'
+      cannot_create_user: 'Cannot created user'
+      is_lock: "Account is locked"
+      user_expired: "Account is expired"
+      password_expired: "Account's password is expired"
+      missing_role_info: "Missing user'role information"
+      assign_approval_not_found: "Cannot found request need to approval"
+      connect_ad: 'Cannot connect to AD Authorization'
+      update_fail: 'Update failed'
+      is_admin: 'Not a user account' 
+  file_controller:
+    success:
+    errors:
+      common: 'Cannot upload file'
+      approval: "Error! Error when approval file: %s"
+      file_not_found: "File not found"
+      cannot_generate_folder: 'Cannot generate folder'
+      cannot_download: 'Cannot download file'
+      not_supported: 'Not support this extension'
+  system_controller:
+    success:
+    errors:
+      approval_policy: 'Policy cannot found'
+  email_service:
+    errors:
+      cannot_send: 'Cannot send email'
