@@ -9,7 +9,7 @@ require 'sinatra/contrib'
 require 'sinatra/strong-params'
 require 'resolv'
 require 'pry'
-Dir.glob('./filezen/{helpers,models}/*.rb').each { |file| require file }
+Dir.glob('./important/{helpers,models}/*.rb').each { |file| require file }
 
 # Abstract class controller
 class ApplicationController < Sinatra::Base
@@ -31,7 +31,7 @@ class ApplicationController < Sinatra::Base
     ActiveRecord::Base.establish_connection(db_config['development'])
     ActiveRecord::Base.default_timezone = :utc
     # load locales file
-    I18n.load_path = Dir.glob('./filezen/locales/*.yml')
+    I18n.load_path = Dir.glob('./important/locales/*.yml')
     # set locale
     I18n.locale = :en
     set :root, './'

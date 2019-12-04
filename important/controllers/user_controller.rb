@@ -7,7 +7,6 @@ class UserController < ApplicationController
       /sign_up /destroy
       /reset_password /check_network
     ]
-    set :ldap_settings, YAML.load_file('config/ldap_settings.yml')['ldap_settings']
   end
   before do
     unless settings.no_auth_needs.include?(env['PATH_INFO']) || authorized?

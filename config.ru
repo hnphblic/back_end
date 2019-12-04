@@ -2,11 +2,8 @@
 
 require 'rubygems'
 require 'sinatra'
-#
-#
-# require_all 'filezen/controllers'
 
-Dir.glob('./filezen/{helpers,controllers}/*.rb').each { |file| require file }
+Dir.glob('./important/{helpers,controllers}/*.rb').each { |file| require file }
 
 version = '/api/v1'
 

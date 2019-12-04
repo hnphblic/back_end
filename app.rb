@@ -7,34 +7,20 @@ require 'sinatra/base'
 require 'sinatra/cross_origin'
 require 'resolv'
 
-require_relative 'filezen/logic/user_logic'
+require_relative 'important/logic/user_logic'
 
 # require router-controller
 # Dir["filezen/controllers/*.rb"].each{ |file| require_relative file}
 
-module LightFileZen
+module SimCard
   class AppServices < Sinatra::Base
     set :bind, '0.0.0.0'
-    user_logic = LightFileZen::Logic::UserLogic.new
+    user_logic = SimCard::Logic::UserLogic.new
 
     configure do
       enable :cross_origin # enable CORS
       db_config = YAML.load_file('config/database.yml')
       ActiveRecord::Base.establish_connection(db_config['development'])
-      # ActiveRecord::Schema.define do
-      #  create_table :users do |t|
-      #    t.string :user_id, null: false
-      #    t.string :name
-      #    t.string :email
-      #    t.string :phone
-      #    t.string :login
-      #    t.string :avata
-      #    t.string :password
-      #    t.datetime :created_at, null: false
-      #    t.datetime :updated_at, :null => false
-      #  end
-      # add_index :users, :email
-      # end
     end
     # Allow CORS request
     before do
