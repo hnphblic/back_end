@@ -277,6 +277,7 @@ class ModemController < ApplicationController
         else
             status = Constants::ModemStatus::STATUS_MODEM_NOSIM;
         end
+        modem.Note = ss;
         modem.status = status;
         serial.close;
         modem;
